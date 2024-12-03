@@ -1,0 +1,34 @@
+/* src/App.css */
+
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 30px;
+  background-color: #f1f1f1;
+}
+
+.language-switcher button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust for RTL if Arabic is selected */
+html[dir="rtl"] .main-container,
+html[dir="rtl"] .language-switcher {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar-links {
+  justify-content: flex-end;
+}
